@@ -31,27 +31,15 @@ fun main() {
 
     /*
     * Functions
-    * */
-    fun addNumbers(): Int{
-        return 80+6
-    }
-
-    fun newAndImprovedNumbers(a: Int, b: Int): Int{
-        return a + b
-    }
-
-    fun newAndImprovedNumbers2(a: Double, b: Double) = a + b
-
+    */
 
     // datatypes
     /*
         Primitives - Integer, Double, Char, Boolean, Long, Float
         Non-primitives - String, Array, List
+    */
 
-     */
-
-
-    //println(addNumbers())
+    println(addNumbers())
     println(newAndImprovedFx(10,10))
     println(newAndImprovedFx(3,2))
 
@@ -74,7 +62,6 @@ fun main() {
     val letterGrades = grades.map { grade ->
         when (grade) {
             2.0 -> "C"
-            2.5 -> "C+"
             3.0 -> "B"
             3.5 -> "B+"
             4.0 -> "A"
