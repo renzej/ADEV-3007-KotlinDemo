@@ -8,8 +8,8 @@ fun main() {
      *  multi line comment
      */
 
-    //println("Hello World!")
-    //print("Hello Class!")
+    println("Hello World!")
+    print("Hello Class!")
 
     // variable usage
     // val is readonly variable
@@ -29,10 +29,6 @@ fun main() {
     println(changingValue)
     println(changingValue.javaClass)
 
-    /*
-    * Functions
-    */
-
     // datatypes
     /*
         Primitives - Integer, Double, Char, Boolean, Long, Float
@@ -44,16 +40,6 @@ fun main() {
     println(newAndImprovedFx(3,2))
 
     println(addNumberShortHand(1,2))
-
-    // Example usage
-    val result1 = sumNumbers(1, 3, 5)
-    val result2 = sumNumbers(4, 5, 6, 7)
-
-    println("Sum 1: $result1") // Output: Sum 1: 9
-    println("Sum 2: $result2") // Output: Sum 2: 22
-
-    val sub = {a:Int,b:Int -> a-b} // anonymous function
-    hof(sub)
 
     // Input list of grades
     val grades = listOf(2.0, 2.5, 3.0, 3.5, 4.0, 4.5)
@@ -73,8 +59,22 @@ fun main() {
     // Print the resulting letter grades
     println(letterGrades) // Output: [C, C+, B, B+, A, A+]
 
-}
-// functions
+    // Example usage
+    val result1 = sumNumbers(1, 3, 5)
+    val result2 = sumNumbers(4, 5, 6, 7)
+
+    println("Sum 1: $result1") // Output: Sum 1: 9
+    println("Sum 2: $result2") // Output: Sum 2: 22
+
+    val sub = {a:Int,b:Int -> a-b} // Anonymous Function
+    hof(sub)
+
+} // end of main
+
+/*
+* Functions
+*/
+
 // hof is named function just a regular fx
 fun hof(subtraction: (Int,Int)-> Int){
     val result = subtraction(6,4) // this is a way to invoke function within hof function
@@ -94,6 +94,9 @@ fun addNumberShortHand(a: Int, b: Int) = (a + b)
 fun sumNumbers(vararg numbers: Int): Int {
     return numbers.sum()
 }
+
+
+
 
 
 
